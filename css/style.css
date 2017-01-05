@@ -7,13 +7,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 html, body{
     font-size: 100%;
 	background:	#fff;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Rochester', cursive;
 }
 p{
 	margin:0;
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Poiret One', cursive;
+	font-family: 'Rochester', cursive;
 	font-weight:700;
 	margin:0;
 }
@@ -697,7 +697,7 @@ ul.wmuSliderPagination {
 }
 .btn-lg{
     font-size:1.3em;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Rochester', cursive;
 	font-weight:900;
 	padding: 0;
     border-radius: 0;
