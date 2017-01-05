@@ -7,6 +7,10 @@ $(document).ready(function(){
 	$('#counter').countdown({
 		timestamp : (new Date()).getTime()
 	});
+	
+	$('#tes')({
+		hai
+	});
 
 
 	/* ---- Animations ---- */
