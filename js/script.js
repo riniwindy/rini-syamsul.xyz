@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	$('#counter').countdown({
 				
-		timestamp : (new Date("Maret 04, 2017 07:30:00")).getTime()
+		timestamp : (new Date()).getTime() + 11*24*60*60*1000
 	});
 	
 	$('#tes')({
