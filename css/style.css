@@ -56,7 +56,7 @@ input[type="submit"],.btn-primary,.date-tag-right a,.news-grid-right ul li a,.na
 }
 .banner-phone p span{
 	left:-1em;
-	color:#45CBBF;
+	color:#fff;
 }
 .logo{
 	float:left;
@@ -203,11 +203,11 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
     text-transform: uppercase;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #45CBBF;
+    color: #fff;
     background-color: transparent;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color:#45CBBF;
+    color:#fff;
 }
 /*-- link-effect-14 --*/
 .link-effect-14 a {
@@ -229,8 +229,8 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
   position: absolute;
   left: 0;
   top: 0;
-  border-top: 2px solid #45CBBF;
-  border-left: 2px solid #45CBBF;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -245,9 +245,9 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
   position: absolute;
   right: 0;
   bottom: 0;
-  border-right: 2px solid #45CBBF;
+  border-right: 2px solid #fff;
 /*-- agileits --*/
-  border-bottom: 2px solid #45CBBF;
+  border-bottom: 2px solid #fff;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -262,8 +262,8 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
   position: absolute;
   right: 0;
   top: 0;
-  border-right: 2px solid #45CBBF;
-  border-top: 2px solid #45CBBF;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -278,8 +278,8 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
   position: absolute;
   left: 0;
   bottom: 0;
-  border-left: 2px solid #45CBBF;
-  border-bottom: 2px solid #45CBBF;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -287,7 +287,7 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
   opacity: 0;
 }
 .link-effect-14 a:hover {
-  color: #45CBBF;
+  color: #fff;
 }
 .link-effect-14 a:hover::before,.link-effect-14 li.active a::before {
   opacity: 1;
@@ -461,7 +461,7 @@ position:relative;
 }
 .testimonials h3:after,.testimonials h3:before,.testimonials-grid-right h3:after,.testimonials-grid-right h3:before{
 	content: '';
-    background: #45CBBF;
+    background: #fff;
     width: 20%;
     height: 1px;
     position: absolute;
@@ -475,7 +475,7 @@ position:relative;
 }
 .testimonials h3 span:after,.testimonials h3 span:before,.testimonials-grid-right h3 span:before,.testimonials-grid-right h3 span:after{
 	content: '';
-    border: 1px solid #45CBBF;
+    border: 1px solid #fff;
     width: 10px;
     height: 10px;
     position: absolute;
@@ -514,7 +514,7 @@ p.testimonials-dummy{
 }
 .testimonials-grid-left-grid-right h4 i{
 	display:block;
-	color:#45CBBF;
+	color:#fff;
 	text-align:right;
 }
 .testimonials-grid-left-grid:nth-child(2){
@@ -559,7 +559,7 @@ ul.wmuSliderPagination {
 	-ms-border-radius: 50px;
 }
 .wmuSliderPagination a.wmuActive {
-	background:#45CBBF;
+	background:#fff;
 }
 /* Default Skin */
 .wmuGallery .wmuGalleryImage {
@@ -663,7 +663,7 @@ ul.wmuSliderPagination {
 }
 .team-grid h4{
 	font-size:1.5em;
-	color:#45CBBF;
+	color:#fff;
 	margin:1em 0;
 }
 .team-grid p{
@@ -716,7 +716,7 @@ ul.wmuSliderPagination {
     font-size: 1.5em;
     text-align: center;
     letter-spacing: 2px;
-    color: #45CBBF;
+    color: #fff;
 }
 .modal-body {
     font-size: 14px;
@@ -761,7 +761,7 @@ ul.wmuSliderPagination {
 }
 .services-grids-wedding-right h4,.services-grids-wedding-left h4{
 	font-size:1em;
-	color:#45CBBF;
+	color:#fff;
 	margin:1em 0;
 }
 .services-grids-wedding h5{
@@ -858,7 +858,7 @@ ul.wmuSliderPagination {
 	text-align:right;
 	font-style:italic;
 	margin:1em 0 0;
-	color:#45CBBF;
+	color:#fff;
 	font-size:2em;
 }
 /*-- //services-bottom --*/
@@ -871,7 +871,7 @@ ul.wmuSliderPagination {
 }
 .date-tag-left p{
 	padding: .3em 1.5em;
-    background: #45CBBF;
+    background: #fff;
     color: #fff;
     font-size: 1em;
 }
@@ -888,11 +888,11 @@ ul.wmuSliderPagination {
 	text-decoration:none;
 }
 .date-tag-right a span{
-	color:#45CBBF;
+	color:#fff;
 	left:-.5em;
 }
 .date-tag-right a:hover{
-	color:#45CBBF;
+	color:#fff;
 }
 .date-tag{
 	margin:0 0 1.5em;
@@ -934,7 +934,7 @@ ul.wmuSliderPagination {
 }
 .news-grid-right ul li a{
 	padding:.5em;
-	background:#45CBBF;
+	background:#fff;
 	color:#fff;
 	font-size:14px;
 	text-decoration:none;
@@ -994,7 +994,7 @@ ul.wmuSliderPagination {
 .newsletter-grid-left input[type="submit"]{
 	outline:none;
 	border:none;
-	background:#45CBBF;
+	background:#fff;
 	padding:10px 0;
 	color:#fff;
 	font-size:1em;
@@ -1111,7 +1111,7 @@ h2.resp-accordion {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     color: #fff;
     cursor: default;
-    background-color: #45CBBF;
+    background-color: #fff;
     border: none;
     border-bottom-color: transparent;
 }
@@ -1138,7 +1138,7 @@ h2.resp-accordion {
     border: none;
 }
 .nav > li > a:hover, .nav > li > a:focus {
-    background-color: #45CBBF;
+    background-color: #fff;
     color: #fff;
 }
 /*-- //gallery --*/
@@ -1165,7 +1165,7 @@ h2.resp-accordion {
 .mail-grid-left input[type="submit"]{
 	outline: none;
     border: none;
-    background: #45CBBF;
+    background: #fff;
     padding: 8px 0;
     font-size: 1em;
     color: #fff;
@@ -1192,7 +1192,7 @@ h2.resp-accordion {
 }
 .get-in ul li span{
 	left:-1em;
-	color:#45CBBF;
+	color:#fff;
 }
 .get-in:nth-child(2){
 	margin:5em 0 0;
@@ -1244,7 +1244,7 @@ h2.resp-accordion {
 	margin:2em 0 0;
 }
 .copyright p a{
-	color:#45CBBF;
+	color:#fff;
 	text-decoration:none;
 }
 .copyright p a:hover{
