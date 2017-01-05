@@ -21,118 +21,205 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
 <!-- js -->
 <style>
-
-#timeline {
+/** timeline box structure **/
+.timeline {
   list-style: none;
+  padding: 20px 0 20px;
   position: relative;
 }
-#timeline:before {
+
+.timeline:before {
   top: 0;
   bottom: 0;
   position: absolute;
   content: " ";
-  width: 2px;
-  background-color: #4997cd;
+  width: 3px;
+  background-color: #eee;
   left: 50%;
   margin-left: -1.5px;
 }
-#timeline .clearFix {
-  clear: both;
-  height: 0;
-}
-#timeline .timeline-badge {
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  font-size: 1.2em;
+
+.tldate {
+  display: block;
+  width: 200px;
+  background: #414141;
+  border: 3px solid #212121;
+  color: #ededed;
+  margin: 0 auto;
+  padding: 3px 0;
+  font-weight: bold;
   text-align: center;
+  -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
+}
+
+.timeline li {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
+}
+.timeline li:after {
+  clear: both;
+}
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
+}
+
+/** timeline panels **/
+.timeline li .timeline-panel {
+  width: 46%;
+  float: left;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  padding: 20px;
+  position: relative;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+/** panel arrows **/
+.timeline li .timeline-panel:before {
   position: absolute;
-  top: 20px;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline li .timeline-panel.noarrow:before, .timeline li .timeline-panel.noarrow:after {
+  top:0;
+  right:0;
+  display: none;
+  border: 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+
+/** timeline circle icons **/
+.timeline li .tl-circ {
+  position: absolute;
+  top: 23px;
   left: 50%;
-  margin-left: -25px;
-  background-color: #4997cd;
-  z-index: 100;
+  text-align: center;
+  background: #6a8db3;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin-left: -16px;
+  border: 3px solid #90acc7;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
+  z-index: 99999;
 }
-#timeline .timeline-badge span.timeline-balloon-date-day {
-  font-size: 1.4em;
-}
-#timeline .timeline-badge span.timeline-balloon-date-month {
-  font-size: .7em;
-  position: relative;
-  top: -10px;
-}
-#timeline .timeline-badge.timeline-filter-movement {
-  background-color: #ffffff;
-  font-size: 1.7em;
-  height: 35px;
-  margin-left: -18px;
-  width: 35px;
-  top: 40px;
-}
-#timeline .timeline-badge.timeline-filter-movement a span {
-  color: #4997cd;
-  font-size: 1.3em;
-  top: -1px;
-}
-#timeline .timeline-badge.timeline-future-movement {
-  background-color: #ffffff;
-  height: 35px;
-  width: 35px;
-  font-size: 1.7em;
-  top: -16px;
-  margin-left: -18px;
-}
-#timeline .timeline-badge.timeline-future-movement a span {
-  color: #4997cd;
-  font-size: .9em;
-  top: 2px;
-  left: 1px;
-}
-#timeline .timeline-movement {
-  border-bottom: dashed 1px #4997cd;
-  position: relative;
-}
-#timeline .timeline-movement.timeline-movement-top {
-  height: 60px;
-}
-#timeline .timeline-movement .timeline-item {
-  padding: 20px 0;
-}
-#timeline .timeline-movement .timeline-item .timeline-panel {
-  border: 1px solid #d4d4d4;
-  border-radius: 3px;
-  background-color: #FFFFFF;
-  color: #666;
-  padding: 10px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-}
-#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul {
-  list-style: none;
-  padding: 0;
+
+
+/** timeline content **/
+
+.tl-heading h4 {
   margin: 0;
+  color: #c25b4e;
 }
-#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul {
-  text-align: right;
+
+.tl-body p, .tl-body ul {
+  margin-bottom: 0;
 }
-#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li {
-  color: #666;
+
+.tl-body > p + p {
+  margin-top: 5px;
 }
-#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li span.importo {
-  color: #468c1f;
-  font-size: 1.3em;
+
+/** media queries **/
+@media (max-width: 991px) {
+  .timeline li .timeline-panel {
+    width: 44%;
+  }
 }
-#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul {
-  text-align: left;
-}
-#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul span.importo {
-  color: #e2001a;
-  font-size: 1.3em;
+
+@media (max-width: 700px) {
+  .page-header h1 { font-size: 1.8em; }
+  
+  ul.timeline:before {
+    left: 40px;
+  }
+  
+  .tldate { width: 140px; }
+
+  ul.timeline li .timeline-panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+
+  ul.timeline li .tl-circ {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
+
+  }
+  ul.timeline > li > .tldate {
+    margin: 0;
+  }
+
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
 }
 	</style>
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
@@ -437,142 +524,115 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h3 class="animated wow zoomIn" data-wow-delay=".5s"><span>Services</span></h3>
 			
-	<div id="timeline"><div class="row timeline-movement timeline-movement-top">
-    <div class="timeline-badge timeline-future-movement">
-        <a href="#">
-            <span class="glyphicon glyphicon-plus"></span>
-        </a>
-    </div>
-    <div class="timeline-badge timeline-filter-movement">
-        <a href="#">
-            <span class="glyphicon glyphicon-time"></span>
-        </a>
-    </div>
-
-</div>
-<div class="row timeline-movement">
-
-    <div class="timeline-badge">
-        <span class="timeline-balloon-date-day">18</span>
-        <span class="timeline-balloon-date-month">APR</span>
-    </div>
-
-
-    <div class="col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-11">
-                <div class="timeline-panel credits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">Mussum ipsum cacilds</span></li>
-                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
+	<ul class="timeline">
+    <li><div class="tldate">Apr 2014</div></li>
+    
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>Surprising Headline Right Here</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3 hours ago</small></p>
         </div>
-    </div>
-
-    <div class="col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-11">
-                <div class="timeline-panel debits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">Mussum ipsum cacilds</span></li>
-                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
+        <div class="tl-body">
+          <p>Lorem Ipsum and such.</p>
         </div>
-    </div>
-</div>
-
-<!--due -->
-
-<div class="row timeline-movement">
-
-
-    <div class="timeline-badge">
-        <span class="timeline-balloon-date-day">13</span>
-        <span class="timeline-balloon-date-month">APR</span>
-    </div>
-
-    <div class="col-sm-offset-6 col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-11">
-                <div class="timeline-panel debits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">Mussum ipsum cacilds</span></li>
-                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>Breaking into Spring!</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 4/07/2014</small></p>
         </div>
-    </div>
-
-    <div class="col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-11">
-                <div class="timeline-panel credits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">Mussum ipsum cacilds</span></li>
-                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
+        <div class="tl-body">
+          <p>Hope the weather gets a bit nicer...</p>
+            
+          <p>Y'know, with more sunlight.</p>
         </div>
-    </div>
-
-
-</div>
-<div class="row timeline-movement">
-
-
-    <div class="timeline-badge">
-        <span class="timeline-balloon-date-day">10</span>
-        <span class="timeline-balloon-date-month">APR</span>
-    </div>
-
-    <div class="col-sm-offset-6 col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-11">
-                <div class="timeline-panel debits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">Mussum ipsum cacilds</span></li>
-                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
+      </div>
+    </li>
+    
+    <li><div class="tldate">Mar 2014</div></li>
+    
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>New Apple Device Release Date</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/22/2014</small></p>
         </div>
-    </div>
-
-    <div class="col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-11">
-                <div class="timeline-panel credits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">Mussum ipsum cacilds</span></li>
-                        <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
+        <div class="tl-body">
+          <p>In memory of Steve Jobs.</p>
         </div>
-    </div>
-
-
-</div>
-</div>
-
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>No icon here</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/16/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Here you'll find some beautiful photography for your viewing pleasure, courtesy of <a href="http://lorempixel.com/">lorempixel</a>.</p>
+          
+          <p><img src="http://lorempixel.com/600/300/nightlife/" alt="lorem pixel"></p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>Some Important Date!</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/03/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Write up a quick summary of the event.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-panel noarrow">
+        <div class="tl-heading">
+          <h4>Secondary Timeline Box</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/01/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>This might be a follow-up post with related info. Maybe we include some extra links, tweets, user comments, photos, etc.</p>
+        </div>
+      </div>
+    </li>
+    
+    <li><div class="tldate">Feb 2014</div></li>
+    
+    <li class="timeline-inverted">
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>The Winter Months</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 02/23/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Gee time really flies when you're having fun.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>Yeah we're pretty much done here</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 02/11/2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Wasn't this fun though?</p>
+        </div>
+      </div>
+    </li>
+  </ul>
 	
 
  
