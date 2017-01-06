@@ -832,7 +832,7 @@ ul.wmuSliderPagination {
 }
 .services-bottom h2{
 	font-size: 2em;
-    color: black;
+    color: #fff;
     line-height: 1.8em;
     position: relative;
     text-transform: capitalize;
@@ -864,7 +864,7 @@ ul.wmuSliderPagination {
 	text-align:right;
 	font-style:italic;
 	margin:1em 0 0;
-	color:black;
+	color:#fff;
 	font-size:2em;
 	font-weight:bold;
 }
