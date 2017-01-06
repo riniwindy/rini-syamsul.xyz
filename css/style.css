@@ -827,11 +827,11 @@ ul.wmuSliderPagination {
 	-o-background-size:cover;
 	-ms-background-size:cover;
 	min-height:400px;
-	padding:7em 0 0;
+	padding:5em 0 0;
 	text-align:center;
 }
 .services-bottom h2{
-	font-size: 3em;
+	font-size: 2em;
     color: #fff;
     line-height: 1.8em;
     position: relative;
