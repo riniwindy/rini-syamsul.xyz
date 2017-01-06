@@ -841,7 +841,7 @@ ul.wmuSliderPagination {
 	padding-left: 1.5em;
 }
 .services-bottom h2:before{
-	content:'';
+	
 	background:url(../images/img-sp.png) no-repeat -52px -150px;
 	display:block;
 	width:32px;
@@ -851,7 +851,7 @@ ul.wmuSliderPagination {
 	left:0%;
 }
 .services-bottom h2:after{
-	content:'';
+	
 	background:url(../images/img-sp.png) no-repeat -5px -150px;
 	display:block;
 	width:32px;
