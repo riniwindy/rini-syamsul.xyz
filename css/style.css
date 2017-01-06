@@ -1207,7 +1207,7 @@ h2.resp-accordion {
 	margin:5em 0 0;
 }
 .map iframe{
-	width:100%;
+	width:50%;
 	min-height:350px;
 	margin-bottom:-6px;
 }
