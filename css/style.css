@@ -317,8 +317,12 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
 /*-- //link-effect-14 --*/
 /*-- //banner --*/
 /*-- banner-bottom --*/
-.banner-bottom,.testimonials,.team,.services,.news,.gallery,.contact{
+.banner-bottom,.team,.services,.news,.gallery,.contact{
 	padding:5em 0;
+}
+
+.testimonials{
+	padding:2em 0;
 }
 .banner-bottom h3,.team h3,.services h3,.news h3,.newsletter h3,.gallery h3,.contact h3{
 	text-align:center;
