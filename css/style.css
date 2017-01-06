@@ -318,11 +318,11 @@ ul.social-icons li .icon-button .icon-g-plus:hover{
 /*-- //banner --*/
 /*-- banner-bottom --*/
 .banner-bottom,.team,.services,.news,.gallery,.contact{
-	padding:5em 0;
+	padding:3em 0;
 }
 
 .testimonials{
-	padding:2em 0;
+	padding:1em 0;
 }
 .banner-bottom h3,.team h3,.services h3,.news h3,.newsletter h3,.gallery h3,.contact h3{
 	text-align:center;
