@@ -927,7 +927,6 @@ ul.wmuSliderPagination {
     border-bottom: solid 2px;
 }
 .news-grid-right h4:after{
-	content:'';
 	background:#212121;
 	height:2px;
 	width:30%;
