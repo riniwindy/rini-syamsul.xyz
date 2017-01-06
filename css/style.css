@@ -831,7 +831,7 @@ ul.wmuSliderPagination {
 	text-align:center;
 }
 .services-bottom h2{
-	font-size: 2em;
+	font-size: 3em;
     color: #fff;
     line-height: 1.8em;
     position: relative;
@@ -839,6 +839,7 @@ ul.wmuSliderPagination {
     width: 80%;
     margin: 0 auto;
 	padding-left: 1.5em;
+	    font-family: 'Clicker Script', cursive;
 }
 .services-bottom h2:before{
 	
@@ -867,6 +868,7 @@ ul.wmuSliderPagination {
 	color:#fff;
 	font-size:2em;
 	font-weight:bold;
+	font-family: 'Clicker Script', cursive;
 }
 /*-- //services-bottom --*/
 /*-- news --*/
