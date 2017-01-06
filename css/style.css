@@ -919,11 +919,12 @@ ul.wmuSliderPagination {
     text-align: right;
 }
 .news-grid-right h4{
-	font-size:1.5em;
-	color:#212121;
-	text-align:right;
-	padding-bottom:.5em;
-	position:relative
+	font-size: 1.5em;
+    color: #212121;
+    text-align: center;
+    padding-bottom: .5em;
+    position: relative;
+    border-bottom: solid 2px;
 }
 .news-grid-right h4:after{
 	content:'';
